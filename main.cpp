@@ -1,13 +1,15 @@
 #include <iostream> 
 using namespace std;
 int main() { 
-int price, delievery_cost, sale, total;
-cout << "Введите стоимость товара: " << endl;
-cin >> price;
-cout << "Введите стоимость доставки: " << endl;
-cin >> delievery_cost;
-cout << "Введите скидку: " << endl;
-cin >> sale;
-total = price + delievery_cost - sale;
-cout << "Итоговая цена: " << total << endl;
+int total_time, order_time, serve_time, clients;
+cout << "Приветствуем вас в нашем ресторане! Эта программа посчитает количество обслуженных клиентов за вас." << endl;
+cout << "Введите длительность смены в минутах: " << endl;
+cin >> total_time;
+cout << "Сколько минут клиент делает заказ?" << endl;
+cin >> order_time;
+cout << "Сколько минут официант подаёт заказ?" << endl;
+cin >> serve_time;
+cout << "-------Идёт подсчёт-------" << endl;
+clients = total_time / (order_time + serve_time);
+cout << "Ваш официант сможет обслужить " <<  clients << "за " << total_time << "минут рабочего времени";
 }
