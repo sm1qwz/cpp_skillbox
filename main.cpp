@@ -1,5 +1,13 @@
 #include <iostream> 
 using namespace std;
 int main() { 
-cout << "hello world!";
+int price, delievery_cost, sale, total;
+cout << "Введите стоимость товара: " << endl;
+cin >> price;
+cout << "Введите стоимость доставки: " << endl;
+cin >> delievery_cost;
+cout << "Введите скидку: " << endl;
+cin >> sale;
+total = price + delievery_cost - sale;
+cout << "Итоговая цена: " << total << endl;
 }
