@@ -12,4 +12,5 @@ cin >> serve_time;
 cout << "-------Идёт подсчёт-------" << endl;
 clients = total_time / (order_time + serve_time);
 cout << "Ваш официант сможет обслужить " <<  clients << " клиентов за " << total_time << " минут рабочего времени";
+123
 }
