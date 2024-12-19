@@ -1,15 +1,15 @@
 #include <iostream> 
 using namespace std;
 int main() { 
-int total_time, order_time, serve_time, clients;
-cout << "Добро пожаловать! Наша программа посчитает всё за вас:)" << endl;
-cout << "Сколько длится рабочая смена в минутах?" << endl;
-cin >> total_time;
-cout << "Сколько клиент делает заказ?" << endl;
-cin >> order_time;
-cout << "Сколько времени официант обслуживает клиента?" << endl;
-cin >> serve_time;
-cout << "---Идёт подсчёт---" << endl;
-clients = total_time / (order_time + serve_time);
-cout << "Ваш официант сможет обслужить " << clients << " клиентов за " << total_time << " минут рабочей смены!";
+int total, podezd, kvartiri, ur_price;
+cout << "Приветствуем вас в калькуляторе кварт.платы!:)" << endl;
+cout << "Введите сумму, указанную в квитанции: " << endl;
+cin >> total;
+cout << "Введите количество подъездов в вашем ЖК:  " << endl;
+cin >> podezd;
+cout << "Введите кодичество квартир в вашем подъезде: " << endl;
+cin >> kvartiri;
+ur_price = total / (podezd * kvartiri);
+cout << "Идёт подсчёт..." << endl;
+cout << "Стоимость вашей кварт.платы составляет: " << ur_price << " рублей, хорошего дня!";
 }
